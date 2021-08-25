@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập 1, bài tập 5</title>
+</head>
+<body>
+<h1>Chương trinh tính lãi suất ngân hàng HDBank: với lãi suất hàng tháng là 2%</h1>
+<script>
+    const interest = 2 / 100
+    let inputLoan = prompt("ENTER YOUR LOAN:");
+    let inputMonth = prompt("ENTER YOUR MONTH:");
+    let loan = parseInt(inputLoan);
+    let month = parseInt(inputMonth);
+    for (i = 1; i <= month; i++) {
+        loan = loan + loan * interest;
+    } document.write("YOUR LOAN IS: " + loan);
+
+</script>
+</body>
+</html>
