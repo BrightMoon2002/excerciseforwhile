@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập 2 bài tập 3:</title>
+</head>
+<body>
+<h1>In tam giác vuông có các góc vuông nằm ở các vị trí khác nhau:</h1>
+<script>
+    // //hình thứ nhất:
+    // for (star = 1; star <= 5; star++) {
+    //     for (space = 1; space <= star; space++) {
+    //         document.write("*");
+    //     }
+    //     document.write("<br>")
+    // }
+
+
+
+
+    // //hình thứ hai:
+    // for (star = 1; star <= 5; star++) {
+    //     for (space = 5; space >= star; space--) {
+    //         document.write("*");
+    //     }
+    //     document.write("<br>");
+    // }
+
+
+
+    // hình thứ 3 fun:
+    // document.write("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*" + "<br>")
+    // document.write("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp**" + "<br>")
+    // document.write("&nbsp&nbsp&nbsp&nbsp&nbsp***" + "<br>")
+    // document.write("&nbsp&nbsp&nbsp****" + "<br>")
+    // document.write("&nbsp*****" + "<br>")
+
+
+    //hình thứ 3 real:
+    // for (let a = 4; a >= 0; a--) {
+    //     for (b = 0; b < a; b++) {
+    //         document.write('&nbsp;&nbsp;');
+    //     }
+    //     for (let b = 0; b < (5 -a); b++){
+    //         document.write('*')
+    //     }
+    //     document.write('<br>')
+    // }
+
+
+
+    //hình thứ 4:
+    // for (let a = 0; a <5; a++) {
+    //     for (let b = 0; b <= a; b++) {
+    //         document.write('&nbsp;&nbsp;')
+    //     }
+    //    for (let b =0; b < (5-a); b++ ){
+    //        document.write('*')
+    //    }
+    //     document.write('<br>')
+    // }
+
+
+
+
+    // hình chữ nhật:
+    let a =1;
+    for (a; a <= 7; a++) {
+        if (a === 1 || a === 7) {
+            for (let b = 1; b <= 21; b++) {
+                document.write('*');
+        }
+        } else {
+            document.write('*')
+            for (let b=1; b<=19;b++) {
+                document.write('&nbsp;&nbsp;')
+            }
+            document.write('*')
+        }
+        document.write('<br>')
+    }
+
+
+</script>
+</body>
+</html>
