@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập 2 bài tập 2</title>
+</head>
+<body>
+<h1>Tính giai thừa của 1 số nguyên dương</h1>
+<script>
+    let inputNumber = prompt("Enter your number u want: ");
+    let count = 0;
+    let a = 1;
+    let b = 1;
+    let factorial;
+    while (count < inputNumber) {
+        factorial = a * b;
+        a = a + 1;
+        b = factorial;
+        count++;
+    } document.write(factorial)
+</script>
+</body>
+</html>
