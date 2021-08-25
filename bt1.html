@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập 1, Bài tập 2:</title>
+</head>
+<body>
+<h1>In N số đầu tiên chia hêt cho 5 trong dãy Fibonacci </h1>
+<script>
+    let a = 0;
+    let b = 1;
+    let fn;
+    let count = 0;
+    let N = prompt("Enter your number you want: ");
+    while (count < N) {
+            fn = a + b;
+            a = b;
+            b = fn;
+            if (fn % 5 === 0) {
+                count++
+                document.write(fn + "<br>");
+            }
+        }
+
+</script>
+
+
+</body>
+</html>
